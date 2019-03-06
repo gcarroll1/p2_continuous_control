@@ -1,0 +1,21 @@
+{
+  "experiment_name": "20Agents",
+  "model_type": "DDPG",
+  "num_agents": 20,
+  "buffer_size": 1e6,
+  "batch_size": 128,
+  "gamma": 0.99,
+  "time_steps": 20,
+  "learn_updates": 10,
+  "target_tau": 1e-3,
+  "lr_actor": 1e-4,
+  "lr_critic": 1e-4,
+  "weight_decay": 0.0001,
+  "dropout": 0.2,
+  "mean_windowsize": 100,
+  "t_max": 1000,
+  "target_score": 30.0,
+  "train_episodes": 500,
+  "test_episodes": 100
+
+}
