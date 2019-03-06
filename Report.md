@@ -22,9 +22,9 @@ Hyperparameters:
 - learning rate of the critic = 3e-4
 - L2 weight decay = 0.0001
 
-with the keep alive utility, to the extent I almost threw in the course.  This made it extremely difficult to experiment with techniques and hyperparameters which is imperative with the unstable nature of RL learning.  In the end I had to do learning in batches (saving progressive results) to cater for restarting learning after a disconnection.
+Had mammoth problems with the Udacity workspace environment loosing connect continually even with the keep alive utility, to the extent I almost threw in the course.  This made it extremely difficult to experiment with techniques and hyperparameters which is imperative with the unstable nature of RL learning.  In the end I had to do learning in batches (saving progressive results) to cater for restarting learning after a disconnection.
 Finally, I have to say that the tutor assistance is close to useless with them just repeating what is in the course literature when asked for assistance.  Tutors are meant to help student understanding not treat them as an interruption.   For those struggling with the exercise, here are my take-aways:
-1.	Use the class Agent object for the models and instance objects for experience and learning both speeds up learning and assists with convergence
+1.	Use the class Agent object for the models and instance objects for experience and learning to both speed up learning and assist with convergence
 2.	The network is sensitive to batch_size for learning and this varies throughout the process.  Early on a small batch_size is needed to set a baseline for weight to start learning and then as the model grows batch_sizes need to increase to allow the model to continue to learn.
 3.	Adding of noise to actions need to be turned off towards the end of learning allowing the model operate purely on a experiential level.
 4.	Due to connectivity problems I wasn’t able to fully explore optimum settings but those used produced good results.
